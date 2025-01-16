@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Gallery Cafe</title>
+
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <!-- Upper Navigation Bar -->
+    <div class="bg-light py-2 fixed-top upper-nav">
+      <div class="container d-flex justify-content-between">
+        <div class="d-flex">
+          <a href="#" class="me-3"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="me-3"><i class="bi bi-twitter"></i> </a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+        </div>
+        <div class="d-flex">
+          <a href="#" class="me-3"><i class="bi bi-cart"></i></a>
+          <a href="#"><i class="bi bi-search"></i> Search</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Lower Navigation Bar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-light fixed-top lower-nav"
+    >
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="assets/images/logo.png" alt="The Gallery Cafe Logo" />
+        <span>The Gallery Cafe</span>
+      </a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="pages/menu.php">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pages/pre-order.php">Pre Ordering</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pages/reservation.php">Table Reservation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pages/parking.html">Parking</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-primary text-white" href="signin.html"
+              >Sign In</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero bg-dark text-white text-center py-5">
+      <div class="hero-slideshow">
+        <div class="slides">
+          <img src="assets/images/cover01.jpg" alt="Slide 1" />
+          <img src="assets/images/cover02.jpg" alt="Slide 2" />
+          <img src="assets/images/cover03.jpg" alt="Slide 3" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu py-5">
+      <div class="container text-center">
+        <h2><i>~~~ Food Menu ~~~</i></h2>
+        <h3>  MOST POPULAR ITEMS  </h3>
+        <div class="row mb-4">
+          <div class="col-md-4 mb-3">
+            <button
+              class="btn btn-outline-primary filter-btn"
+              data-filter="breakfast"
+            >
+              <i class="bi bi-cup-straw"></i>
+              <p> Popular Breakfast </p>
+            </button>
+          </div>
+          <div class="col-md-4 mb-3">
+            <button
+              class="btn btn-outline-primary filter-btn"
+              data-filter="lunch"
+            >
+              <i class="bi bi-basket"></i>
+              <p> Special Lunch </p>
+            </button>
+          </div>
+          <div class="col-md-4 mb-3">
+            <button
+              class="btn btn-outline-primary filter-btn"
+              data-filter="dinner"
+            >
+              <i class="bi bi-basket"></i>
+              <p> Lovely Dinner </p>
+            </button>
+          </div>
+        </div>
+
+        <div class="row food-items">
+          <!-- Breakfast Items -->
+          <div class="col-md-4 mb-3 item breakfast">
+            <div class="card">
+              <img
+                src="assets/images/food1.jpeg"
+                alt="Food 1"
+                class="card-img"
+              />
+              <div class="card-content">
+                <h5>Cake</h5>
+                <p>Rs. 350.00</p>
+              </div>
+              <div class="card-overlay">
+                <div class="overlay-text">
+                  <p>Delicious morning delight.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3 item breakfast">
+            <div class="card">
+              <img
+                src="assets/images/food_item1.webp"
+                alt="Food 2"
+                class="card-img"
+              />
+              <div class="card-content">
+                <h5>Kiribath</h5>
+                <p>Rs. 120 .00</p>
+              </div>
+              <div class="card-overlay">
+                <div class="overlay-text">
+                  <p>Perfect for a hearty start.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Lunch Items -->
+          <div class="col-md-4 mb-3 item lunch">
+            <div class="card">
+              <img
+                src="assets/images/lunch_sl1.webp"
+                alt="Food 3"
+                class="card-img"
+              />
+              <div class="card-content">
+                <h5>Fried Rice</h5>
+                <p>Rs. 450 .00</p>
+              </div>
+              <div class="card-overlay">
+                <div class="overlay-text">
+                  <p>Satisfying midday meal.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3 item lunch">
+            <div class="card">
+              <img
+                src="assets/images/dumplins.webp"
+                alt="Food 4"
+                class="card-img"
+              />
+              <div class="card-content">
+                <h5> Dumplins </h5>
+                <p>Rs. 650 .00</p>
+              </div>
+              <div class="card-overlay">
+                <div class="overlay-text">
+                  <p>Flavorful and filling.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dinner Items -->
+          <div class="col-md-4 mb-3 item dinner">
+            <div class="card">
+              <img
+                src="assets/images/lunch_sl_5.jpg"
+                alt="Food 5"
+                class="card-img"
+              />
+              <div class="card-content">
+                <h5> Fish Bun </h5>
+                <p>Rs. 80 .00</p>
+              </div>
+              <div class="card-overlay">
+                <div class="overlay-text">
+                  <p>Delicious and savory dinner item.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3 item dinner">
+            <div class="card">
+              <img
+                src="assets/images/food6.jpeg"
+                alt="Food 6"
+                class="card-img"
+              />
+              <div class="card-content">
+                <h5> String Hoppers </h5>
+                <p>Rs. 150 .00</p>
+              </div>
+              <div class="card-overlay">
+                <div class="overlay-text">
+                  <p>Hearty and fulfilling meal.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Events Page -->
+    <section class="events py-5">
+      <div class="container text-center">
+        <img
+          src="assets/images/event-images.jpg"
+          class="img-fluid"
+          alt="Event Image"
+        />
+        <p>
+          To make an enquiry or for any further assistance please email our
+          Private Dining and Events team on
+          <a href="mailto:events@paradiseroad.lk">events@paradiseroad.lk</a>.
+        </p>
+        <button class="btn btn-primary">Contact Us</button>
+        <button class="btn btn-primary">Weddings at The Gallery Cafe</button>
+        <div class="row mt-4">
+          <div class="col-md-2 mb-3">
+            <img
+              src="assets/images/event1.jpg"
+              class="img-fluid"
+              alt="Event 1"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Page -->
+    <section class="about py-5 bg-light">
+      <div class="container">
+        <h1 class="text-center mb-5">About Us</h1>
+        <div class="row">
+          <div class="col-md-6 about-text">
+            <h2>Welcome to The Gallery Cafe</h2>
+            <p class="lead">
+              With <span class="fw-bold">15</span> years of experience, we pride
+              ourselves on exceptional culinary skills.
+            </p>
+            <p><span class="fw-bold">50</span> Popular Master Chefs</p>
+          </div>
+          <div class="col-md-6 about-images">
+            <!-- Add 4 images here -->
+            <div class="row">
+              <div class="col-md-12 mb-4">
+                <img
+                  src="assets/images/about1.jpg"
+                  class="img-fluid"
+                  alt="About Image 1"
+                />
+              </div>
+              <!-- Repeat for other about images -->
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-5">
+          <h2 class="meet-team-heading">Meet Our Team</h2>
+          <div class="row team-members">
+            <div class="col-md-6 col-lg-3 mb-4">
+              <div class="chef-card">
+                <img
+                  src="assets/images/chef3.jpg"
+                  class="img-fluid rounded-circle"
+                  alt="Chef 1"
+                />
+                <div class="chef-info">
+                  <h5>Sumanasiri</h5>
+                  <p>Head Chef</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3 mb-4">
+              <div class="chef-card">
+                <img
+                  src="assets/images/chef1.jpg"
+                  class="img-fluid rounded-circle"
+                  alt="Chef 1"
+                />
+                <div class="chef-info">
+                  <h5> Vihaga </h5>
+                  <p>Cafe Attendant</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3 mb-4">
+              <div class="chef-card">
+                <img
+                  src="assets/images/chef2.jpg"
+                  class="img-fluid rounded-circle"
+                  alt="Chef 1"
+                />
+                <div class="chef-info">
+                  <h5> Edirisnghe </h5>
+                  <p>Cafe Server</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3 mb-4">
+              <div class="chef-card">
+                <img
+                  src="assets/images/chef5.jpg"
+                  class="img-fluid rounded-circle"
+                  alt="Chef 1"
+                />
+                <div class="chef-info">
+                  <h5> Saduni </h5>
+                  <p>Cafe Server</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3 mb-4">
+              <div class="chef-card">
+                <img
+                  src="assets/images/chef6.png"
+                  class="img-fluid rounded-circle"
+                  alt="Chef 1"
+                />
+                <div class="chef-info">
+                  <h5> Sakuni </h5>
+                  <p>Cafe Server</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3 mb-4">
+              <div class="chef-card">
+                <img
+                  src="assets/images/chef4.jpg"
+                  class="img-fluid rounded-circle"
+                  alt="Chef 3"
+                />
+                <div class="chef-info">
+                  <h5> Naduni </h5>
+                  <p>Cafeteria Cook</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial Page -->
+    <section class="testimonial py-5">
+      <div class="container text-center">
+        <h1>Testimonial</h1>
+        <h2>OUR CLIENT SAYS</h2>
+        <div class="testimonial-carousel">
+          <div class="carousel-wrapper">
+            <!-- Testimonial Item -->
+            <div class="testimonial-item">
+              <div class="testimonial-content">
+                <img
+                  src="assets/images/client1.jpeg"
+                  class="img-fluid rounded-circle"
+                  alt="Client 1"
+                />
+                <div class="testimonial-text">
+                  <p>"Amazing food and great service!"</p>
+                  <p class="client-name"> Maduri </p>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-item">
+              <div class="testimonial-content">
+                <img
+                  src="assets/images/client2.jpg"
+                  class="img-fluid rounded-circle"
+                  alt="Client 2"
+                />
+                <div class="testimonial-text">
+                  <p>"Loved the ambiance and the staff!"</p>
+                  <p class="client-name">Udhan </p>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-item">
+              <div class="testimonial-content">
+                <img
+                  src="assets/images/client4.jpg"
+                  class="img-fluid rounded-circle"
+                  alt="Client 3"
+                />
+                <div class="testimonial-text">
+                  <p>"A must-visit place for food lovers!"</p>
+                  <p class="client-name"> Sanuka </p>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-item">
+              <div class="testimonial-content">
+                <img
+                  src="assets/images/client5.jpg"
+                  class="img-fluid rounded-circle"
+                  alt="Client 4"
+                />
+                <div class="testimonial-text">
+                  <p>"Fantastic experience and great food!"</p>
+                  <p class="client-name"> Lasantha </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-item">
+              <div class="testimonial-content">
+                <img
+                  src="assets/images/client7.jpg"
+                  class="img-fluid rounded-circle"
+                  alt="Client 1"
+                />
+                <div class="testimonial-text">
+                  <p>"Amazing food and great service!"</p>
+                  <p class="client-name"> Pramodya </p>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-item">
+              <div class="testimonial-content">
+                <img
+                  src="assets/images/client9.jpg"
+                  class="img-fluid rounded-circle"
+                  alt="Client 2"
+                />
+                <div class="testimonial-text">
+                  <p>"Loved the ambiance and the staff!"</p>
+                  <p class="client-name"> Shanudri </p>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-item">
+              <div class="testimonial-content">
+                <img
+                  src="assets/images/client8.webp"
+                  class="img-fluid rounded-circle"
+                  alt="Client 3"
+                />
+                <div class="testimonial-text">
+                  <p>"A must-visit place for food lovers!"</p>
+                  <p class="client-name"> Manuri</p>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-item">
+              <div class="testimonial-content">
+                <img
+                  src="assets/images/client4.jpeg"
+                  class="img-fluid rounded-circle"
+                  alt="Client 4"
+                />
+                <div class="testimonial-text">
+                  <p>"Fantastic experience and great food!"</p>
+                  <p class="client-name">Client Name 4</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Page -->
+    <section class="contact py-5 bg-light">
+      <div class="container">
+        <h1>Contact Us</h1>
+        <h2>Contact For Any Query</h2>
+        <div class="row mb-4">
+          <div class="col-md-4">
+            <h3>Booking</h3>
+            <p><i class="bi bi-envelope"></i> book@example.com</p>
+          </div>
+          <div class="col-md-4">
+            <h3>General</h3>
+            <p><i class="bi bi-envelope"></i> info@example.com</p>
+          </div>
+          <div class="col-md-4">
+            <h3>Technical</h3>
+            <p><i class="bi bi-envelope"></i> tech@example.com</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387142.8400720022!2d-74.2581936870656!3d40.705831639953515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c250b5b74aee67%3A0x5a55732a2c6329a5!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2slk!4v1625674952458!5m2!1sen!2slk"
+              width="100%"
+              height="300"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+          <div class="col-md-6">
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Name:</label>
+                <input type="text" class="form-control" id="name" name="name" />
+              </div>
+              <div class="mb-3">
+                <label for="contact" class="form-label">Contact No:</label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="contact"
+                  name="contact"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message:</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  name="message"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <h5>Company</h5>
+            <p><a href="about.html" class="text-white">About Us</a></p>
+            <p><a href="contact.html" class="text-white">Contact Us</a></p>
+            <p>
+              <a href="pages/pre-order.php" class="text-white">Reservation</a>
+            </p>
+          </div>
+          <div class="col-md-3">
+            <h5>Contact</h5>
+            <p><i class="bi bi-geo-alt"></i> 123 Street, Colombo, Sri Lanka</p>
+            <p><i class="bi bi-telephone"></i> +012 345 67890</p>
+            <p><i class="bi bi-envelope"></i> info@example.com</p>
+            <p>
+              <a href="#" class="text-white me-2"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a href="#" class="text-white me-2"
+                ><i class="bi bi-twitter"></i
+              ></a>
+              <a href="#" class="text-white me-2"
+                ><i class="bi bi-youtube"></i
+              ></a>
+              <a href="#" class="text-white"><i class="bi bi-facebook"></i></a>
+            </p>
+          </div>
+          <div class="col-md-3">
+            <h5>Opening</h5>
+            <p>Monday - Saturday</p>
+            <p>09AM - 09PM</p>
+            <p>Sunday</p>
+            <p>10AM - 08PM</p>
+          </div>
+          <div class="col-md-3">
+            <h5>Newsletter</h5>
+            <p>Enter Your Email</p>
+            <input type="email" class="form-control" placeholder="Your email" />
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="assets/js/menu_filter.js"></script>
+    <script src="assets/js/hero_scroll.js"></script>
+    <script src="assets/js/testimonial_scroll.js"></script>
+  </body>
+</html>
